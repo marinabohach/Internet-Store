@@ -72,7 +72,7 @@ public class InternetStore {
         if(amount <= 0|| ApplicationUtil.isIndexIncorrect(index)){
             System.out.println("Invalid value");
             return;
-        }
+        } 
         basket.addItem(goods.get(index), amount);
 
     }
