@@ -76,7 +76,9 @@ public class InternetStore {
         basket.addItem(goods.get(index), amount);
 
     }
-    
+    public void displayBasket(){
+
+    }
     public void manyCalls(MyFunctionalInterface s){
         while (true){
             s.accept();
