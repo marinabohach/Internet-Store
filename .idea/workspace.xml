@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5becdad3-a15d-421f-ae43-4a30971aa801" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/BasketItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/BasketItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Good.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Good.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/InternetStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/InternetStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/start/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/start/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/ApplicationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/util/ApplicationUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +54,20 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="InternetStore" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,6 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651411670852</updated>
       <workItem from="1651411672236" duration="3065000" />
+      <workItem from="1651491013426" duration="15277000" />
     </task>
     <servers />
   </component>

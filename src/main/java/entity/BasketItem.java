@@ -24,4 +24,10 @@ public class BasketItem {
     public void setAmount(int amount) {
         this.amount = amount;
     }
+
+    @Override
+    public String toString() {
+        return "good " + good +
+                ", amount=" + amount;
+    }
 }

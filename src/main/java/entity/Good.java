@@ -2,6 +2,7 @@ package entity;
 
 import constants.Category;
 import constants.Currency;
+import util.ApplicationUtil;
 
 public class Good {
     private String name;
@@ -9,6 +10,10 @@ public class Good {
     private double price;
     private Currency currency;
     private Category category;
+
+    public void toMinus(int itemAmount){
+        amount -= itemAmount;
+    }
 
 
     public String getName() {
@@ -54,10 +59,16 @@ public class Good {
     @Override
     public String toString() {
         return "name " + name +
-                ", amount=" + amount +
-                ", price=" + price +
-                ", currency=" + currency +
-                ", category=" + category.getValue() +
-                '}';
+                ", category " + category.getValue() +
+                ", amount " + amount +
+                ", price " + price +
+                ", currency " + currency;
+    }
+    public String displayInCurrency(Currency currency){
+        return "name " + name +
+                ", category " + category.getValue() +
+                ", amount " + amount +
+                ", price " + ApplicationUtil.getPriceByCurrency(this, currency) +
+                ", currency " + currency;
     }
 }

@@ -17,9 +17,9 @@ public class InternetStore {
     private Scanner scanner = new Scanner(System.in);
     private List<Good> goods = new ArrayList<>();
     private Basket basket = new Basket();
+    private Currency currency = Currency.UAH;
 
     public void restock(){
-//        while(true){
             Good good = new Good();
             System.out.println("Enter name of a good");
             good.setName(scanner.next());
@@ -32,23 +32,35 @@ public class InternetStore {
             displayCategories();
             good.setCategory(getCategory(scanner.nextInt()));
             goods.add(good);
-//            System.out.println();
-//            System.out.println("Do you want to continue? y/n");
-//            if (!scanner.next().equals("y")) {
-//                return;
-//            }
-//        }
     }
 
     public void display(){
         for (int i = 0; i < goods.size(); i++) {
-            System.out.println(i + 1 + ": " + goods.get(i));
+            System.out.println(i + 1 + ": " + goods.get(i).displayInCurrency(currency));
         }
     }
+    public void changeCurrency(){
+        System.out.println("Choose a currency");
+        System.out.println("1 UAH, 2 USD, 3 EUR");
+        switch (scanner.nextInt()){
+            case 1: {
+                currency = Currency.UAH;
+                break;
+            }
+            case 2:{
+                currency = Currency.USD;
+                break;
+            }
+            default:{
+                currency = Currency.EUR;
+            }
+        }
+    }
+
     public void displayByCategory(){
         System.out.println("Choose a category");
         displayCategories();
-        Category category = getCategory(getIndex());
+        Category category = getCategory(scanner.nextInt());
         for (int i = 0; i < goods.size(); i++) {
             if(goods.get(i).getCategory().equals(category)){
                 System.out.println(i + 1 + " " + goods.get(i));
@@ -60,7 +72,7 @@ public class InternetStore {
         System.out.println("1 - to display the general list");
         System.out.println("2 - to display by categories");
         if(scanner.nextInt() == 1){
-            displayCategories();
+            display();
         }
         else{
             displayByCategory();
@@ -77,8 +89,15 @@ public class InternetStore {
 
     }
     public void displayBasket(){
-
+       basket.display();
     }
+    public void clearBasket(){
+        basket.clear();
+    }
+    public void toBuy(){
+        basket.toBuy();
+    }
+
     public void manyCalls(MyFunctionalInterface s){
         while (true){
             s.accept();
